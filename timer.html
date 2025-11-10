@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="timer-container">
+        
+        <div class="modes">
+            <button class="mode-btn active" id="pomodoro-btn">集中</button>
+            <button class="mode-btn" id="short-break-btn">休憩</button>
+        </div>
+
+        <div class="timer-display">
+            <span id="time-display">25:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="start-btn">スタート</button>
+            <button class="control-btn" id="pause-btn">一時停止</button>
+            <button class="control-btn" id="reset-btn">リセット</button>
+        </div>
+
+    </div>
+
+    <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto" loop></audio>
+    
+    <audio id="meme-sound" src="Screen_Recording_20251104_151100_YouTube.mp3" preload="auto"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+.timer-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 340px;
+}
+
+.modes {
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.mode-btn.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.timer-display {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+}
+
+.control-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.1s;
+}
+
+.control-btn:active {
+    transform: scale(0.97);
+}
+
+body.pomodoro-mode {
+    background-color: #d95550;
+}
+body.pomodoro-mode .control-btn {
+    color: #d95550;
+}
+
+body.break-mode {
+    background-color: #4c9195;
+}
+body.break-mode .control-btn {
+    color: #4c9195;
+}
